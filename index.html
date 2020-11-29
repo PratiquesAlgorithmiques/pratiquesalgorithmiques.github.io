@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Pratiques Algorithmiques</title>
+    <link rel="stylesheet" href="style/normalize.css">
+		<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div class="main">
-        <h1>Studio Pratiques Algorithmiques</h1>
+   <header>
+		<div class="title">
+			<h1>Studio Pratiques Algorithmiques</h1>
+			<h2>workshop web2print</h2>
+		</div>
+		<input type="checkbox" id="toggle-menu" name="toggle-menu" value="menu-visibility" hidden />
+	  <label for="toggle-menu">
+	    <span class="span-nochecked about-btn" aria-label="open about">
+	        à propos
+	    </span>
+	    <span class="span-checked about-btn" aria-label="close about">
+	        fermer
+	    </span>
+	  </label>
+		<div class="introduction">
+			<h3>contexte</h3>
+			<p>
+				Un texte de présentation du workshop
+			</p>
+		</div>
+	</header>
 
-        <p>Ça Marche !</p>
-        <p>Youpi ! </p>
-    </div>
+	<main>
+		<ul class="project-gallery">
+			<li>
+				<a href="test.html" title="test">
+					<h2>Prénom</h2>
+					<h3>Les champignons</h3>
+					<figure class="cover">
+						<img src="projets/test/image.jpg" alt="test cover">
+					</figure>
+				</a>
+			</li>
+		</ul>
+	</main>
 </body>
 </html>
