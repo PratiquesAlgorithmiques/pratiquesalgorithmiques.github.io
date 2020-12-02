@@ -1,0 +1,99 @@
+
+
+@page{
+    size: A5;
+    margin: 5mm;    
+}
+
+body{
+ 
+    text-transform: uppercase;
+    font-size:22px;
+    line-height: 1.2;
+    text-align: center; 
+}
+.cover{
+
+    page: cover;
+	font-family: "Pilowlava";
+	background-color: #64739c;
+	font-size:22px;
+	
+
+	
+}
+
+
+
+p{
+    font-family: "Ibm Plex Mono";
+	font-size:18px;
+	
+}
+img{
+	width: 99%;
+	
+
+}
+
+@page cover{
+		
+	background-color: #64739c;
+			
+	}
+
+
+
+section{
+	background-color: rgb(78, 65, 66); 
+	
+    break-before: page;
+    /*margin-right: 5mm;*/
+}
+
+.saucisse{
+    font-size: 4.5em;
+}
+
+.screen-button, .print-button{
+	position: absolute; 
+	top: 15px;
+	left:15px;
+	border: 1px solid rgb(138, 91, 91);
+	padding: 15px;
+	background: rgb(63, 38, 38);
+	color: red;
+	cursor: pointer;
+	font-family: Pilowlava;
+	
+}
+
+.web{
+	margin: 30px;
+}
+
+.web h1, .web h2{
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.web p{
+	font-family: 'Helvetica', sans-serif; 
+	font-size: 1.2em;
+	line-height: 1.2;
+	width:50%;
+	margin:auto;
+
+}
+
+@media print{
+	.screen-button{
+		display: none;
+	}
+}
+@media screen {
+	.screen-button {
+		display: block !important;
+	}
+}

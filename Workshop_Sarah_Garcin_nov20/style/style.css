@@ -147,6 +147,11 @@ main{
   font-weight: normal;
 }
 
+.project-gallery p{
+  font-size: 16px;
+  font-weight: normal;
+}
+
 .project-gallery .link:before{
   content: "⬈";
   color: var(--main-color);
