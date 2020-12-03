@@ -1,0 +1,106 @@
+.containertest{
+	position : absolute; 
+	right:0px; 
+	bottom:0px; 
+	z-index: 10;
+}
+canvas {
+	visibility: visible !important;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+@page{
+	size: A5;
+	marks: crop cross;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+.screen-button, .print-button{
+	position: absolute; 
+	top: 20px;
+	left:20px;
+	border: 1px solid #000;
+	padding: 20px;
+	background: #000;
+	cursor: pointer;
+}
+
+a {
+	color: #FFF;
+}
+
+.print {
+	position: relative;
+	break-after: always;
+}
+
+.skip {
+	break-after: always;
+}
+
+a::after {
+	content: "position" attr(href) "position";
+}
+
+.pagedjs_page{
+	position: relative; 
+	background: red;
+}
+
+img {
+	width: 150%;
+}
+
+#button {
+	cursor: pointer;
+}
+
+.displayimage {
+	display: none;
+	position: absolute;
+	z-index: 10;
+}
+
+.image:hover .displayimage {
+	display:block !important;
+}
+
+@media print {
+	.displayimage{
+		display: block;
+	}
+}
+
+@media screen {
+	.displayimage {
+		display: none !important;
+	}
+}
+
+#respond {
+	margin-top: 20px;
+	float: right;
+}
+
+#respond input[type='text'],
+#respond textarea {
+	margin-bottom: 10px;
+	display: block;
+	float: right;
+	width: 100%;
+  
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;  
+	line-height: 1.4em;
+}
