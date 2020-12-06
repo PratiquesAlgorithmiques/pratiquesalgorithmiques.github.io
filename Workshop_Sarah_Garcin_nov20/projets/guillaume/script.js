@@ -1,13 +1,13 @@
-class interfaceButton extends Paged.Handler{
-	constructor(chunker, polisher, caller){
-		super(chunker, polisher, caller);
-	}
-	afterRendered(pages){
-		var button = document.createElement('div');
-		button.classList.add("screen-button");
-		button.innerHTML = "<a href='web.html'>Voir la version web</a>";
-		document.body.appendChild(button);
-	}
+class interfaceButton extends Paged.Handler {
+  constructor(chunker, polisher, caller) {
+    super(chunker, polisher, caller);
+  }
+  afterRendered(pages) {
+    var button = document.createElement('div');
+    button.classList.add("screen-button");
+    button.innerHTML = "<a href='web.html'>Voir la version web</a>";
+    document.body.appendChild(button);
+  }
 }
 
 Paged.registerHandlers(interfaceButton);
@@ -43,23 +43,23 @@ class createPages extends Paged.Handler {
       // le if évite qu'il mette un p5 sur la couverture
 
       if (page.position > 0) {
-        var container = page.element.querySelector('section');            // trouver l'élément section sur la page actuelle
-        var div = document.createElement('div');                    // créer un div (pas encore intégré)
-        div.id = "myContainer" + page.position                     // donne un id, si page.position = 0 ce serait myContainer0, etc.
+        var container = page.element.querySelector('section'); // trouver l'élément section sur la page actuelle
+        var div = document.createElement('div'); // créer un div (pas encore intégré)
+        div.id = "myContainer" + page.position // donne un id, si page.position = 0 ce serait myContainer0, etc.
 
 
-        p5one(div)                                                          // appeler la fonction p5one, envoyer le div (myContainer0)
+        p5one(div) // appeler la fonction p5one, envoyer le div (myContainer0)
         // p5two(div)                                                       // vous pouvez créer d'autres fonctions et les appeler
 
         // Crée un paragraphe, lui donne un id, appelle getText() (plus bas) et change le html du paragraphe
         // le rajoute au div (après le p5)
         var para = document.createElement('p');
         //para.id       = "para" + page.position    
-       // para.innerHTML    = getText();
+        // para.innerHTML    = getText();
 
         div.appendChild(para);
 
-        container.appendChild(div);                                         // attacher le div à la section
+        container.appendChild(div); // attacher le div à la section
       }
     })
   }
@@ -85,7 +85,7 @@ function p5one(div) {
 
 
     p.setup = function () {
-      p.createCanvas( 600, 800);
+      p.createCanvas(600, 800);
       //p.fill(70,0,0);
 
       for (var i = 0; i < 21; i++) {
@@ -125,16 +125,16 @@ function p5one(div) {
     }
 
     p.draw = function () {
-     // p.background(220, 70, 80);
+      // p.background(220, 70, 80);
       for (var i = bubbles.length - 1; i >= 0; i--) {
         bubbles[i].update();
         bubbles[i].display();
       }
       p.noStroke();
-      
+
       //p.rect(0,750,600,50)
 
-     // p.rect(500,0,50,50)
+      // p.rect(500,0,50,50)
 
       //p.image(img[0],p.width/2,p.height/2,p.mouseX,p.mouseY);
       // p.image(img[1],p.width/3,p.height/3,p.mouseX,p.mouseY);
@@ -151,7 +151,7 @@ function p5one(div) {
       this.display = function () {
         p.imageMode(p.CENTER);
         p.image(this.img, this.x, this.y, 150, 150);
-        
+
         //ellipse(this.x, this.y, 48, 48);
       }
 

@@ -1,0 +1,82 @@
+
+/* passé et futur 과거와 미래 */
+
+.circle {
+    width: 36px;
+    height: 36px;
+    background: black;
+    border-radius: 30px;
+    float: left;
+    margin-left: 50%;
+    margin-top: 5%;
+
+}
+
+.circle2 {
+    width: 21px;
+    height: 27px;
+    background: black;
+    -moz-bordor-radius:10px/20px;
+    -webkit-border-radius:10px/20px;
+    border-radius: 15px/20px;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    transform: translate(164px, -60px);
+}
+
+.main {
+    margin-left: 52.5%;
+    color: darkslategray;
+    width: 15%;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom : 1%;
+    border: 0.4px solid darkgray;
+    transform: translate(150px, 10px);
+}
+
+.main2 {
+    margin-bottom: 5%;
+    color: darkslategray;
+    width: 15%;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom : 1%;
+    border: 0.4px solid darkgray;
+    transform: translate(10px, -200px);
+}
+
+.videoContainer {
+    position: absolute;
+    padding-top: 15%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  }
+  
+iframe {
+    /* optional */
+    width: 100%;
+    height: 100%; 
+}
+
+canvas {
+    pointer-events: none;
+}
+  
+body {
+    background-image: url(images/IMG_5266-2.JPG);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: 88% 35%;
+}
