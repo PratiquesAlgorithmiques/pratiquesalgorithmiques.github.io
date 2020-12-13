@@ -57,27 +57,27 @@ class generateText extends Paged.Handler {
 				
 				container.appendChild(print);
 
-				//if(page.position == 4) {
-				//	var div3 = document.createElement('div');					
-				//	div3.id  = "myContainer" + page.position;			
-					//p5two(div3);														
-					//container.appendChild(div3);	
-				//}
+				if(page.position == 4) {
+
+					var div3 = document.createElement('div');					
+					div3.id  = "myContainer" + page.position;	
+					
+					p5two(div3);														
+					container.appendChild(div3);	
+
+					console.log(container)
+				}
 
 				if(page.position == 5) {
-							
-				    
+		
 					var div2 = document.createElement('div');					
 					div2.id  = "myContainer" + page.position;			
 
 					p5one(div2);														
-					container.appendChild(div2);	
-							
+					container.appendChild(div2);			
 				}
 		});
-
 	}
-
 }
 
 Paged.registerHandlers(generateText);
@@ -89,8 +89,7 @@ function p5one(div) {
 		let x = 280;
 		let y = 400;
 		let h = 40;
-	
-	  							
+		let toggle = 1;				
 
 		p.setup = function () {
 			p.createCanvas(600, 900);
@@ -100,27 +99,43 @@ function p5one(div) {
 
 		p.draw = function () {
 			p.background(255,255,255);
+			
+			if ((h < 0) || (h > 200)) {
+				toggle = -toggle;
+			}
+
+			h = h + toggle;
 
 			p.circle(x, y, h);
-				h=h+1;
-		}
-		
-		
+		}	
 	}
 	let myp5 = new p5(s, div);
   }
- // function p5two(div) {										
-	//const s = (p) => {	
 
-		// p.setup = function () {
-		
-		// p.createCanvas(400, 400);
-		// toggle = !toggle;
-		// if (toggle == 0) { 
-			// fill(0,0,0);
-		// } else {
-			// fill(255,255,255);
-		// }
-	// }
-// }
-// }
+
+ function p5two(div) {										
+	const s = (p) => {	
+
+		let toggle = 1;
+
+		p.setup = function() {
+			p.createCanvas(400, 400);
+		}
+
+		p.draw = function() {
+			p.background(255,255,255);
+			
+			toggle = !toggle;  // 0 ou 1
+			
+			if (toggle) { 
+				p.fill(0,0,0);
+			} else {
+				p.fill(255,255,255);
+			}
+
+			p.rect(100, 100, 100, 100);
+		}	
+	}
+
+	let myp5 = new p5(s, div);
+}
