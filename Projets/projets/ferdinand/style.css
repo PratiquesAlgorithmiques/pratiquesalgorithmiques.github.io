@@ -1,0 +1,49 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+#container{
+  padding: 10px
+}
+
+#playButtons, #nextButtons
+{
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#myVideo{
+  width: 100%
+}
+#vidNum{
+  float: right;
+}
+
+button{
+  width: 100%
+}
+
+#play {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  width: 10vw;
+}
+
+#stop {
+  position: absolute;
+  top: 8vh;
+  left: 5vw;
+  width: 10vw;
+}
+
+
+#nextvideo {
+  position: absolute;
+  top: 11vh;
+  left: 5vw;
+  width: 10vw;
+}
