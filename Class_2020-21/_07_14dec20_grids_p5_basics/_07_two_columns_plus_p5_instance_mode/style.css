@@ -1,0 +1,25 @@
+body {
+    padding: 0;
+    margin: 0;   
+} 
+
+#container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div {
+    height: 100vh;
+}
+
+#first {
+    background-color: aqua;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#second {
+    background-color: chartreuse;
+}

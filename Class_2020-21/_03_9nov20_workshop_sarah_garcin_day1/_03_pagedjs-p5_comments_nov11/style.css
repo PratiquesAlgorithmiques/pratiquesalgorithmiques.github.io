@@ -1,0 +1,32 @@
+@page{
+	size: A5;
+	margin: 1.5cm;
+}
+
+body{
+	font-family: 'Reglo', sans-serif;
+	text-transform: uppercase;
+	font-size:22px;
+	line-height: 1.2;
+	text-align: center; 
+}
+
+.cover{
+	page: cover;
+}
+
+@page cover{
+		background-color: #FFF400;
+}
+
+section{
+	break-before: page;
+}
+
+.saucisse{
+	font-size: 4.5em;
+}
+
+
+
+

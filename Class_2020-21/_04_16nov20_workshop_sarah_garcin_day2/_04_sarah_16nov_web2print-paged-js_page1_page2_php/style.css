@@ -1,0 +1,32 @@
+@page{
+	size: A5;
+}
+
+.screen-button, .print-button{
+	position: absolute; 
+	top: 20px;
+	left:20px;
+	border: 1px solid #000;
+	padding: 20px;
+	background: #FFF;
+	cursor: pointer;
+}
+
+.web{
+	margin: 30px;
+}
+
+.web h1, .web h2{
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.web p{
+	font-family: 'Helvetica', sans-serif; 
+	font-size: 1.2em;
+	line-height: 1.2;
+	width:50%;
+	margin:auto;
+
+}

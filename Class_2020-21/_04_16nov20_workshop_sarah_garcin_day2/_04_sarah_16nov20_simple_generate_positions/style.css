@@ -1,0 +1,38 @@
+body{
+	margin:0;
+	width:100%;
+	overflow-x: hidden;
+}
+
+main{
+	width:100%;
+	padding: 10px 50px;
+}
+
+.text{
+	font-family: Helvetica, sans-serif;
+	font-size: 4em;
+	position: relative;
+}
+
+
+@media print{
+	@page{
+		size: A5;
+		margin: 1cm;
+	}
+	.text{
+		page-break-after: always;
+		page-break-inside: avoid;
+		color: red;
+		text-transform: uppercase;
+		font-size: 6em;
+	}
+}
+
+
+
+
+
+
+

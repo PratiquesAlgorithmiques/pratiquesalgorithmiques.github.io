@@ -1,0 +1,63 @@
+body {
+    background-color: aquamarine;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    color: blue;
+}
+
+h1 {
+    color: blue;
+}
+
+.main {
+    color: forestgreen;
+    margin-left: 25%;
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+.tutoriels {
+    margin-left: 25%;
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+.github {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.autrespages {
+    width: 20%;
+}
+
+.tutoriels li {
+    color: brown;
+}
+
+.planning {
+    color: red;
+    float: left;
+    width: 20%;
+    background-color: greenyellow;
+}
+
+#nom {
+    color: blue;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+#monsketch {
+    margin-left: 25%;
+}
+
+#myimage {    
+    width:20%;
+    margin-left:25%;
+}
