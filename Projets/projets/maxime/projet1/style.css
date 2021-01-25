@@ -1,0 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+p {
+  padding-left: 25%;
+  width: 50%;
+}
+
+.main {
+  color: forestgreen;
+}
