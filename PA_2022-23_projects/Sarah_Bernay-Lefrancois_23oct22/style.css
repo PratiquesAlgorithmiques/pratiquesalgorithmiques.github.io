@@ -1,0 +1,97 @@
+
+*{
+    font-family: 'Changa', sans-serif;
+    color: white;
+    text-decoration: none;
+ 
+}
+
+body{ 
+    margin: 0 auto;
+}
+
+header.header{
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 200px;
+}
+
+section.top-page {
+    background: url("images/abys3.jpg");
+    background-size: cover;
+    height: 106vh;
+    padding: 25px;   
+    
+}
+.landing-page {
+    padding: 20px;
+}
+.big-title {
+    color: rgb(243, 246, 246);
+    margin-top: 290px;
+    font-size: 80px;
+    font-family: 'Changa', sans-serif;
+    font-weight: 100;
+    padding: 100px:100px
+}
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 600px;
+    margin-left: 2px;
+}
+
+nav.nav li {
+    width: 60px;
+    font-size: medium;
+    font-weight: 100;
+}
+
+.section-title {
+    font-size: 50px;
+    font-family: 'Changa', sans-serif;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(3, 2, 0);
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.backgroung-image{
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.main_content{
+    color: rgb(253, 253, 253);
+    text-align: center;
+    font-size: medium;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 100px 20px;
+}
+
+.titre {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(251, 251, 251);
+}
+
+

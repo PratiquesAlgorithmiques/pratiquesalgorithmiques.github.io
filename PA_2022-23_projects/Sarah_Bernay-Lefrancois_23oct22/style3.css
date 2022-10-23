@@ -1,0 +1,46 @@
+*{
+    font-family: 'Changa', sans-serif;
+    text-decoration: none;
+    color: rgb(254, 254, 254);
+    background-image: url(images/fondabysse.jpeg);
+    background-size: cover;
+}
+
+.reservation{
+    text-align: center;
+   display: block;
+}
+.textebilletterie{
+color: white;
+ display: block;
+ margin-right: 20%;
+ margin-left: 20%;
+ text-align: center;
+}
+.textebilletterie2{
+    color: white;
+ display: block;
+ margin-right: 20%;
+ margin-left: 20%;
+ text-align: center;
+}
+.imagetarif{
+    width: 1010px;
+    object-position: center;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+   margin-left: 205px;
+   margin-top: 70px;
+}
+.infopratique{
+    color: white;
+ display: flex;
+ margin-right: 20%;
+ margin-left: 20%;
+ text-align: center;
+ margin-top: 100px;
+
+}
+
+ 
