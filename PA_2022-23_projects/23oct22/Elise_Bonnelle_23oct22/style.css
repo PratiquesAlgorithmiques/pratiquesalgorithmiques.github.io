@@ -1,0 +1,25 @@
+body {
+    font-family: 'Quantico' , sans-serif;
+}  
+
+h1 {
+    color: red;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+#images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
