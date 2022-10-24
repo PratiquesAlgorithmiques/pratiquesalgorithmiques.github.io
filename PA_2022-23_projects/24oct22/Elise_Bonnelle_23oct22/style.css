@@ -1,5 +1,8 @@
 body {
     font-family: 'Quantico' , sans-serif;
+    /* background-image: url('images/BUILDINGS3.png');
+    background-size: cover; */
+    /* background-repeat: no-repeat; Do not repeat the image */
 }  
 
 h1 {
@@ -23,3 +26,4 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
+}

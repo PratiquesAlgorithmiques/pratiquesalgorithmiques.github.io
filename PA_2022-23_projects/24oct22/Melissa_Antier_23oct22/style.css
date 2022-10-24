@@ -1,0 +1,52 @@
+body {
+    font-family: 'Jua', sans-serif;
+} 
+
+/* background-image :img src="clouds.jpg"; */
+
+img {
+    width: 45%;
+}
+
+#imarges {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+#imarges div {
+    border: solid 5px rgb(255, 244, 32);
+    padding: 50px;
+}
+
+#imarges img {
+    width: 100%;
+}
+
+#imarges #imgverticale {
+    width: 20%;
+}
+
+
+
+#titre {
+    text-align: center;
+    font-size: 100px;
+}
+
+#blabla {
+    text-align: center;
+    font-size: 40px;
+}
+
+#blabla2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#blabla3 {
+    text-align: center;
+    font-size: 40px;
+}
+
+

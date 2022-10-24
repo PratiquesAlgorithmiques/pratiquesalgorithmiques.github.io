@@ -3,7 +3,6 @@
     font-family: 'Changa', sans-serif;
     color: white;
     text-decoration: none;
- 
 }
 
 body{ 
@@ -29,13 +28,14 @@ section.top-page {
 .landing-page {
     padding: 20px;
 }
+
 .big-title {
     color: rgb(243, 246, 246);
     margin-top: 290px;
-    font-size: 80px;
     font-family: 'Changa', sans-serif;
+    font-size: 2vw;
     font-weight: 100;
-    padding: 100px:100px
+    padding: 100px;
 }
 
 nav.nav {
@@ -95,3 +95,10 @@ nav.nav li {
 }
 
 
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+} */

@@ -24,15 +24,23 @@ color: white;
  margin-left: 20%;
  text-align: center;
 }
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
 .imagetarif{
     width: 1010px;
-    object-position: center;
+    /* object-position: center;
     object-fit: cover;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
    margin-left: 205px;
    margin-top: 70px;
 }
+
+
 .infopratique{
     color: white;
  display: flex;

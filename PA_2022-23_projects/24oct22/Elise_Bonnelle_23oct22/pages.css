@@ -1,0 +1,20 @@
+#pageunimg {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+#pageunimg img {
+    width: 100%;
+}
+
+
+#pagedeuximg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+#pageduximg img {
+    width: 100%;
+}
