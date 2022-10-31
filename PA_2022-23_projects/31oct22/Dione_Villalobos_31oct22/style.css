@@ -1,0 +1,30 @@
+body{
+    background-color: darkred;
+    background-image: url("images/background.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* height: 100vh; */
+    /* padding: 25px; */
+}
+
+h1{
+    font-family: 'Bungee', cursive;
+    color: cyan;
+    text-align: center;
+    size: 200px;
+}
+
+h3{
+    font-family: 'Secular One', sans-serif;
+    color: darkred;
+    text-align: center;
+}
+
+p{
+    text-align: right;
+    color: beige;
+}
+
+img {
+    max-height: 100%;
+}
