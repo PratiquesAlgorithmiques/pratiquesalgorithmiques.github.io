@@ -1,0 +1,54 @@
+/*--SECTION 5--*/
+
+* {
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth; 
+    font-family: "Torus Notched"
+}
+.sec5 h1 {
+    color: white;
+}
+
+#lesimages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    text-align: center;
+}
+
+#lesimages div {
+    border: solid 1px black;
+    padding: 5px;
+}
+
+#home {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.titre {
+    text-align: center;
+
+    
+}
+
+@media (max-width:1050px) {
+    .sec5 .content {
+        flex-direction: column;
+    }
+    .sec5 #lesimages {
+        display: flex;
+        flex-direction: column;
+        width: 470px; 
+        align-items: center;
+        margin: 30px auto;
+
+    }
+
+    .sec5 .titre {
+        font-size: 1.5em;
+    }
+    
+}

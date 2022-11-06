@@ -1,0 +1,144 @@
+*{
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth; 
+    color: white; 
+}
+
+/*--SECTION 3--*/
+
+
+.sec3 {
+    
+    height: 500px;
+    position: right;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.sec3 .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    font-family: "Torus Notched";
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sec3 h1 {
+    color: rgb(127, 202, 255);
+    font-size: 3em;
+}
+
+.sec3 .separateur {
+    width: 100px;
+    height: 7px;
+    background-color: blue;
+    border-radius: 0 50px 50px 0;
+    margin: 25px 0;
+}
+
+.sec3 p {
+    max-width: 600px;
+    line-break: auto;
+    margin-bottom: 40px;
+}
+
+.sec3 button {
+
+    font-family: "Torus Notched";
+    position: relative;
+    height: 40px;
+    width: 220px;
+    border-radius: 50px;
+    border: 3px solid blue;
+    background-color: transparent;
+    font-size: 1em;
+    color: rgb(2, 2, 146);
+    z-index: 1;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.sec3 button:hover {
+    color: white;
+    width: 250px;
+}
+
+.sec3 button::before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 280px;
+    border: 3px solid blue;
+    border-radius: 50px;
+    background-color: black;
+    top: -2px;
+    left: -2px;
+    transform: translate(-100%);
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.sec3 button:hover::before {
+    transform: translate(0%);
+}
+
+.sec3 button i {
+   transform: scale(0);
+   margin: -10px;
+   transition: 0.3s;
+}
+
+.sec3 button:hover i {
+    transform: scale(1);
+    margin-left: 10px;
+}
+
+.sec3 .right img {
+    width: 100%;
+}
+
+@media (max-width: 1500px) {
+    .sec3 .right {
+       max-width: 450px;
+       align-items: center;
+    }
+}
+
+@media (max-width: 1030px) {
+    .sec3 .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px auto;
+    }
+    .sec3 .left {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec3 h1 {
+    font-size: 3em;
+    text-align: center;
+    }
+
+    .sec3 .separateur {
+        border-radius: 50px;
+    }
+
+    .sec3 button { 
+        margin: 50px 0;
+    }
+
+    .sec3 .right img {
+        width: 80%;
+    }
+
+}
+
