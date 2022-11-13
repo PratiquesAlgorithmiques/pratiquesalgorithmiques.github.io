@@ -1,0 +1,162 @@
+body {
+    font-size: 24px;
+    word-break: auto;
+    font-family: 'Roboto Mono', monospace; 
+}
+@page {
+    size: A4 landscape;
+    /* margin: 40mm 15mm; */
+    /* marks: crop cross; */
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    font-family: "Torus Notched";
+    margin-top: 10px;
+    font-size: 70px;
+    font-weight: 100;
+
+  }
+
+#couverture {
+    page: couverture;
+  }
+  
+@page couverture {
+    background-image: url(images/pagedbio3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+
+@page:nth(2) {
+    background-image: url(images/pagedbio1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.intro {
+    display: block;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+
+@page:nth(3) {
+    background-color: black;`
+}
+img {
+    width: 90%;
+} 
+#lesimages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+#lesimages div {
+    border: solid 1px white;
+    padding: 10px;
+}
+p{
+    color: white;
+    text-align: center;
+}
+
+@page:nth(4) {
+    background-color: black;
+    font-size: 17px;
+}
+
+#imgtx1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+
+}
+h3{
+    color:blue;
+    text-align: center;
+}
+
+#texte1 {
+    text-align: center;
+}
+
+@page:nth(5) {
+    background-color: black;
+    font-size: 13.5px;
+  }
+
+h2 {
+    color: green;
+    text-align: center;
+}
+#imgtx2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+
+}
+.texte2 {
+    color: white;
+}
+#imgtx3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+.texte3 { 
+    color:white
+}
+
+
+
+@page:nth(6) {
+    background-color: black;
+  }
+
+
+
+.texte4 {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+#anguille {
+    width: 250%;
+    align-items: center;
+}
+#textef {
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    border: solid 3px green;
+    margin-top: 300px;
+}
+@page:nth(7) {
+    background-image: url(images/pagedbio4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+#textev {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: solid 3px greenyellow;
+    margin-top: 490px;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
