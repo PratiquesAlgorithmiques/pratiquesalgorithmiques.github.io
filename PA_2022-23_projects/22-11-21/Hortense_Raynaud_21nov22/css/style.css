@@ -1,0 +1,103 @@
+@page:left {
+    margin-top: 15mm;
+    margin-left: 15mm;
+    margin-right: 20mm;
+    margin-bottom: 25mm;
+}
+
+@page:right {
+    margin-top: 15mm;
+    margin-left: 15mm;
+    margin-right: 20mm;
+    margin-bottom: 25mm;
+}
+
+@page {
+    size: 167mm 250mm;
+    
+}
+
+
+img {
+    display:block;
+    width: 85%;
+    margin: auto;
+  }
+  
+#couverture {
+    page: couverture;
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+    margin-top: 50mm;
+  }
+  
+  @page couverture {
+    background-color: rgb(110, 219, 14);
+    text-align: center;
+  }
+
+@page:nth(2) {
+    background-color: royalblue;
+}
+
+@page:nth(4) {
+    /* bleed: 0mm; */
+    margin:0px;
+}
+
+@page:nth(6) {
+    /* bleed: 0mm; */
+    margin:0px;
+}
+
+
+h1 {
+    break-before: right;
+}
+
+#avantpropos {
+    text-align: right;
+}
+
+#textep3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+    grid-gap: 30px;
+}
+
+ /* #texte1 {
+    /* text-align: justify; */
+    /* margin: 10px; 
+}*/
+
+/*#texte2 {
+    /* text-align: justify; */
+    /* margin: 10px; 
+}*/
+
+body {
+    font-size: 15px;
+    font-family: 'EB Garamond', serif;
+}
+
+h3 {
+    font-size: 140px;
+    text-align: center;
+    color: royalblue;
+}
+
+
+#chicago1 {
+    width: 100%;
+    height: auto;
+    /* margin: auto; */
+}
+
+#chicago2 {
+    width: 200%;
+}
+
+#amerique {
+    margin-top: 100px;
+}
