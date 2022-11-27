@@ -1,0 +1,100 @@
+body {
+  font-size: 18px;
+  font-family: Alkalami;
+  background:lightgray;
+}
+
+#titre {
+  font-size: 24px;
+  font-family: Alkalami;
+  break-before: page;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 80mm;
+
+  text-align: center;
+  padding: 2mm;
+  margin: 4mm;
+}
+
+.texte {
+  text-align: justify;
+  /* border: 3px solid rgb(0, 0, 0); */
+  margin-top: 2mm;
+  margin-bottom: 2mm; 
+  padding: 2mm;
+  padding-bottom: 3mm; 
+
+}
+
+
+#signature {
+  text-align: right;
+}
+
+
+/* POSE PROBLEM */
+/* @page {
+  size: 140mm 200;
+  margin: 15mm;
+  @bottom-right{ counter (page);
+  }
+} */
+
+@page: left {
+  size: 130mm 180;
+  margin-left: 12mm;
+  margin-right: 18mm;
+  margin-top: 14mm;
+  margin-bottom: 12mm;
+  @bottom-left {
+    content: counter(page);
+  }
+}
+
+@page: right {
+  size: 130mm 180;
+  margin-left: 18mm;
+  margin-right: 12mm;
+  margin-top: 14mm;
+  margin-bottom: 12mm;
+  @bottom-right {
+    content: counter(page);
+  }
+}
+
+@page: first {
+  size: 130mm 180;
+  margin-left: 12mm;
+  margin-right: 18mm;
+  margin-top: 14mm;
+  margin-bottom: 12mm;
+}
+
+#block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#couverture{
+  page: couverture; 
+}
+
+@page couverture {
+  background-color: bisque;
+}
+
+/* #saut_de_page {
+  @page :blank {
+  @top-left { content: none; }
+  }
+} */
+
+#align_text_left{
+  text-align: left; 
+  display : block;
+}
+
+#align_text_right{
+  text-align: right; 
+  display : block;
+}
