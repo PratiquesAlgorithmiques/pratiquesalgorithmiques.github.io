@@ -1,0 +1,76 @@
+body {
+  font-size: 22px;
+  font-family: 'Amiri Quran', serif;
+  background:lightgray;
+  text-align: center;
+}
+
+
+@page{
+  size: A5;
+  @bottom-right{
+    content:counter(page);
+  }
+}
+
+h1{
+  string-set: header content(chaptername);
+}
+
+@page{
+  @top-right{
+    content:string(header)
+  }
+}
+
+@page :blank{
+  @bottom-right {content: none;}
+}
+@page :blank{
+  @bottom-left {content: none;}
+}
+
+.cover{
+  page: couverture;
+  
+}
+
+@page couverture{
+  margin:20%;
+  @bottom-right {content:none;}
+  @top-right {content: none;}
+  background-image:url(images/page016.jpg)
+}
+
+.chapterpage{
+  page: chapitre;
+}
+
+@page chapitre{
+  margin: 25%;
+  @bottom-right{content: none;}
+  @top-right{content: none;}
+}
+
+
+img{
+  width: 110%;
+}
+
+
+.firstimage{
+  page:premiereimage;
+}
+
+@page premiereimage{
+  page-break-after: auto;
+ margin-top: 150px;
+}
+
+.images{
+  page:images
+}
+
+@page images{
+ width: 120%;
+}
