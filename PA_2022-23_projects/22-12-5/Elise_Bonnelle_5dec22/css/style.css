@@ -1,0 +1,41 @@
+
+@page {
+        size: 148mm 200mm;
+        margin : 0mm;      
+}
+
+#img1{
+    max-width: 100%;
+    height: auto;
+}
+
+#titre {
+    font-family: 'Libre Barcode 39 Extended Text', cursive;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5mm;
+}
+
+
+#img2, #img3, #img4, #img4, #img5, #img6, #img7 {
+    max-width: 100%;
+    height: auto;
+}
+
+#page2, #page3, #page4, #page5, #page6, #page7 {
+    break-before: right;
+}
+
+#page2-text, #page3-text, #page4-text, #page5-text, #page6-text, #page7-text {
+    font-family:'Anton', sans-serif;
+    font-size: 40px;
+    color:rgb(255, 255, 255);
+    position: absolute;
+    bottom: 10px ;
+    right: 5px;
+}
+
+
