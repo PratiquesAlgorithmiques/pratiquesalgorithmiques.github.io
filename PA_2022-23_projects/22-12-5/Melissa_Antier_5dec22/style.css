@@ -1,12 +1,13 @@
+@page {
+  size: A4;
+}
+
 body {
-  
-  color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 14px;
     font-family: 'Anton', sans-serif;
     font-family: 'IBM Plex Mono', monospace;
     font-family: 'Source Code Pro', monospace;
-    background:rgb(21, 0, 255);
+    background-color:rgb(21, 0, 255);
+}
   
-    @page {
-      size: A4 ;
-  }
