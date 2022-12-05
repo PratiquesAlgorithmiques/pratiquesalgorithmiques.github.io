@@ -1,0 +1,84 @@
+@page :left {
+    margin-top: 15mm;
+    margin-left: 15mm;
+    margin-right: 20mm;
+    margin-bottom: 15mm;
+}
+
+@page :right {
+    margin-top: 15mm;
+    margin-left: 20mm;
+    margin-right: 15mm;
+    margin-bottom: 15mm;
+}
+
+@page {
+    size: 167mm 250mm;
+}
+
+@page monimage {
+    margin: 0;
+}
+
+.monimage {
+    page: monimage;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+}
+
+img {
+    display:block;
+    width: 100%;
+  }
+
+#fanny1 {
+    break-before: right;
+    width: 100%;
+}
+
+#page1 {
+    break-before: right;
+}
+
+#merci {
+    text-align: center;
+    margin-top: 33%;
+}
+
+#fanny2 {
+    break-before: right;
+    width: 100%;
+}
+
+#texte1 {
+    break-before: right;
+    text-align: justify;
+}
+
+#fanny3G {
+    width: 100%;
+}
+
+#fanny3D {
+    width: 100%;
+}
+
+#fanny4G {
+    width: 100%;
+}
+
+#fanny4D {
+    width: 100%;
+}
+
+#texte2 {
+    text-align: justify;
+    margin-bottom: 15mm;
+}
+
+#fanny5 {
+    break-before: right;
+    width: 100%;
+}
